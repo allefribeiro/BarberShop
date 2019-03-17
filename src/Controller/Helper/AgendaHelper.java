@@ -65,4 +65,14 @@ public class AgendaHelper {
             comboBoxModel.addElement(servico);
         }
     }
+
+    public Servico obterServico() 
+    {
+        return (Servico) view.getjComboBoxServico().getSelectedItem();
+    }
+
+    public void setarValor( float valor) 
+    {
+        view.getjTextFieldValor().setText(valor+"");
+    }
 }
