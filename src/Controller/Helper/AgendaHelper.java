@@ -101,13 +101,12 @@ public class AgendaHelper implements IHelper {
         
         Agendamento agendamento = new Agendamento(id, cliente, servico, valor, dataHora, observacao);
         return agendamento;
-        //new Agendamento();
     }
 
     @Override
     public void limparTela()
     {
-        view.getjTextFieldId().setText("");
+        view.getjTextFieldId().setText("0");
         view.getjTextFieldData().setText("");
         view.getjTextFieldHora().setText("");
         view.getjTextAreaObservacoes().setText("");
