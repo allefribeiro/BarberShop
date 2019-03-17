@@ -63,7 +63,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jMenuOperacao.setText("Operação");
 
         jMenuItemAgenda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/icons/barbershop.png"))); // NOI18N
-        jMenuItemAgenda.setText("Agendamento");
+        jMenuItemAgenda.setText("Agenda");
         jMenuItemAgenda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItemAgendaActionPerformed(evt);

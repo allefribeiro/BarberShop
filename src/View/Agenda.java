@@ -6,6 +6,7 @@
 package View;
 
 import Controller.AgendaController;
+import javax.swing.JTable;
 
 /**
  *
@@ -35,7 +36,7 @@ public class Agenda extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextAreaObservacoes = new javax.swing.JTextArea();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTable = new javax.swing.JTable();
+        TableAgendamento = new javax.swing.JTable();
         jButtonAgendar = new javax.swing.JButton();
         jTextFieldHora = new javax.swing.JTextField();
         jTextFieldValor = new javax.swing.JTextField();
@@ -63,7 +64,7 @@ public class Agenda extends javax.swing.JFrame {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 140, 460, 190));
 
-        jTable.setModel(new javax.swing.table.DefaultTableModel(
+        TableAgendamento.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -71,7 +72,7 @@ public class Agenda extends javax.swing.JFrame {
                 "ID", "Cliente", "Serviço", "Valor", "Data", "Hora", "Observação"
             }
         ));
-        jScrollPane2.setViewportView(jTable);
+        jScrollPane2.setViewportView(TableAgendamento);
 
         getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 380, 910, 280));
 
@@ -249,6 +250,7 @@ public class Agenda extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTable TableAgendamento;
     private javax.swing.JButton jButtonAgendar;
     private javax.swing.JComboBox jComboBoxCliente;
     private javax.swing.JComboBox jComboBoxServico;
@@ -264,7 +266,6 @@ public class Agenda extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelValor;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable jTable;
     private javax.swing.JTextArea jTextAreaObservacoes;
     private javax.swing.JTextField jTextFieldData;
     private javax.swing.JTextField jTextFieldHora;
@@ -276,4 +277,14 @@ public class Agenda extends javax.swing.JFrame {
     {
         this.controller.atualizaTabela();
     }
+
+    public JTable getTableAgendamento() {
+        return TableAgendamento;
+    }
+
+    public void setTableAgendamento(JTable TableAgendamento) {
+        this.TableAgendamento = TableAgendamento;
+    }
+    
+    
 }
