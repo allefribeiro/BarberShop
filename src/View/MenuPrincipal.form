@@ -12,7 +12,7 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItemCliente">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/View/imagens/icons/icons8-short-beard-24.png"/>
+                  <Image iconType="3" name="/View/imagens/icons/man.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Cliente"/>
               </Properties>
@@ -20,13 +20,16 @@
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItemServico">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/View/imagens/icons/icons8-barber-scissors-24.png"/>
+                  <Image iconType="3" name="/View/imagens/icons/blade.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Servi&#xe7;o"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItemUsuario">
               <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/View/imagens/icons/shaver.png"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Usuario"/>
               </Properties>
             </MenuItem>
@@ -39,8 +42,14 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItemAgenda">
               <Properties>
-                <Property name="text" type="java.lang.String" value="jMenuItem1"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/View/imagens/icons/barbershop.png"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Agendamento"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItemAgendaActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>

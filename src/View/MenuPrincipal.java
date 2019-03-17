@@ -5,17 +5,21 @@
  */
 package View;
 
+import Controller.MenuPrincipalController;
+
 /**
  *
  * @author Allef
  */
 public class MenuPrincipal extends javax.swing.JFrame {
+    private final MenuPrincipalController controller;
 
     /**
      * Creates new form MenuPrincipal
      */
     public MenuPrincipal() {
         initComponents();
+        this.controller = new MenuPrincipalController(this);
     }
 
     /**
@@ -42,14 +46,15 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jMenuCadastro.setText("Cadastro");
 
-        jMenuItemCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/icons/icons8-short-beard-24.png"))); // NOI18N
+        jMenuItemCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/icons/man.png"))); // NOI18N
         jMenuItemCliente.setText("Cliente");
         jMenuCadastro.add(jMenuItemCliente);
 
-        jMenuItemServico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/icons/icons8-barber-scissors-24.png"))); // NOI18N
+        jMenuItemServico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/icons/blade.png"))); // NOI18N
         jMenuItemServico.setText("Serviço");
         jMenuCadastro.add(jMenuItemServico);
 
+        jMenuItemUsuario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/icons/shaver.png"))); // NOI18N
         jMenuItemUsuario.setText("Usuario");
         jMenuCadastro.add(jMenuItemUsuario);
 
@@ -57,7 +62,13 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         jMenuOperacao.setText("Operação");
 
-        jMenuItemAgenda.setText("jMenuItem1");
+        jMenuItemAgenda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/imagens/icons/barbershop.png"))); // NOI18N
+        jMenuItemAgenda.setText("Agendamento");
+        jMenuItemAgenda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemAgendaActionPerformed(evt);
+            }
+        });
         jMenuOperacao.add(jMenuItemAgenda);
 
         jMenuBar.add(jMenuOperacao);
@@ -77,6 +88,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMenuItemAgendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemAgendaActionPerformed
+        this.controller.navegarParaAgenda();
+    }//GEN-LAST:event_jMenuItemAgendaActionPerformed
 
     /**
      * @param args the command line arguments
