@@ -24,7 +24,8 @@ public class Agendamento {
     private Date data;
     private String observacao;
 
-    public Agendamento(int id, Cliente cliente, Servico servico, float valor, String data) {
+    public Agendamento( int id, Cliente cliente, Servico servico, float valor, String data)
+    {
         this.id = id;
         this.cliente = cliente;
         this.servico = servico;
@@ -36,51 +37,63 @@ public class Agendamento {
         }
     }
 
-    public int getId() {
+    public int getId()
+    {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId( int id)
+    {
         this.id = id;
     }
 
-    public Cliente getCliente() {
+    public Cliente getCliente()
+    {
         return cliente;
     }
 
-    public void setCliente(Cliente cliente) {
+    public void setCliente( Cliente cliente)
+    {
         this.cliente = cliente;
     }
 
-    public Servico getServico() {
+    public Servico getServico()
+    {
         return servico;
     }
 
-    public void setServico(Servico servico) {
+    public void setServico( Servico servico)
+    {
         this.servico = servico;
     }
 
-    public float getValor() {
+    public float getValor() 
+    {
         return valor;
     }
 
-    public void setValor(float valor) {
+    public void setValor( float valor)
+    {
         this.valor = valor;
     }
 
-    public Date getData() {
+    public Date getData()
+    {
         return data;
     }
 
-    public void setData(Date data) {
+    public void setData( Date data)
+    {
         this.data = data;
     }
 
-    public String getObservacao() {
+    public String getObservacao()
+    {
         return observacao;
     }
 
-    public void setObservacao(String observacao) {
+    public void setObservacao( String observacao) 
+    {
         this.observacao = observacao;
     }
     

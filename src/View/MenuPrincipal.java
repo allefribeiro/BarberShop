@@ -32,7 +32,9 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jMenuCadastro = new javax.swing.JMenu();
         jMenuItemCliente = new javax.swing.JMenuItem();
         jMenuItemServico = new javax.swing.JMenuItem();
+        jMenuItemUsuario = new javax.swing.JMenuItem();
         jMenuOperacao = new javax.swing.JMenu();
+        jMenuItemAgenda = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -48,9 +50,16 @@ public class MenuPrincipal extends javax.swing.JFrame {
         jMenuItemServico.setText("Serviço");
         jMenuCadastro.add(jMenuItemServico);
 
+        jMenuItemUsuario.setText("Usuario");
+        jMenuCadastro.add(jMenuItemUsuario);
+
         jMenuBar.add(jMenuCadastro);
 
         jMenuOperacao.setText("Operação");
+
+        jMenuItemAgenda.setText("jMenuItem1");
+        jMenuOperacao.add(jMenuItemAgenda);
+
         jMenuBar.add(jMenuOperacao);
 
         setJMenuBar(jMenuBar);
@@ -108,8 +117,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelFundoMenu;
     private javax.swing.JMenuBar jMenuBar;
     private javax.swing.JMenu jMenuCadastro;
+    private javax.swing.JMenuItem jMenuItemAgenda;
     private javax.swing.JMenuItem jMenuItemCliente;
     private javax.swing.JMenuItem jMenuItemServico;
+    private javax.swing.JMenuItem jMenuItemUsuario;
     private javax.swing.JMenu jMenuOperacao;
     // End of variables declaration//GEN-END:variables
 }
