@@ -8,6 +8,7 @@ package View;
 import Controller.AgendaController;
 import javax.swing.JComboBox;
 import javax.swing.JTable;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 /**
@@ -320,6 +321,38 @@ public class Agenda extends javax.swing.JFrame {
 
     public void setjTextFieldValor(JTextField jTextFieldValor) {
         this.jTextFieldValor = jTextFieldValor;
+    }
+
+    public JTextField getjTextFieldId() {
+        return jTextFieldId;
+    }
+
+    public void setjTextFieldId(JTextField jTextFieldId) {
+        this.jTextFieldId = jTextFieldId;
+    }
+
+    public JTextArea getjTextAreaObservacoes() {
+        return jTextAreaObservacoes;
+    }
+
+    public void setjTextAreaObservacoes(JTextArea jTextAreaObservacoes) {
+        this.jTextAreaObservacoes = jTextAreaObservacoes;
+    }
+
+    public JTextField getjTextFieldData() {
+        return jTextFieldData;
+    }
+
+    public void setjTextFieldData(JTextField jTextFieldData) {
+        this.jTextFieldData = jTextFieldData;
+    }
+
+    public JTextField getjTextFieldHora() {
+        return jTextFieldHora;
+    }
+
+    public void setjTextFieldHora(JTextField jTextFieldHora) {
+        this.jTextFieldHora = jTextFieldHora;
     }
     
     
