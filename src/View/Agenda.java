@@ -6,6 +6,7 @@
 package View;
 
 import Controller.AgendaController;
+import javax.swing.JComboBox;
 import javax.swing.JTable;
 
 /**
@@ -115,7 +116,6 @@ public class Agenda extends javax.swing.JFrame {
         });
         getContentPane().add(jTextFieldId, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, 260, -1));
 
-        jComboBoxServico.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Allef", "Ana", "Conrado" }));
         jComboBoxServico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBoxServicoActionPerformed(evt);
@@ -123,7 +123,6 @@ public class Agenda extends javax.swing.JFrame {
         });
         getContentPane().add(jComboBoxServico, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 220, 260, 30));
 
-        jComboBoxCliente.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Allef", "Ana", "Conrado" }));
         jComboBoxCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBoxClienteActionPerformed(evt);
@@ -276,6 +275,8 @@ public class Agenda extends javax.swing.JFrame {
     private void iniciar() 
     {
         this.controller.atualizaTabela();
+        this.controller.atualizaCliente();
+        this.controller.atualizaServico();
     }
 
     public JTable getTableAgendamento() {
@@ -284,6 +285,22 @@ public class Agenda extends javax.swing.JFrame {
 
     public void setTableAgendamento(JTable TableAgendamento) {
         this.TableAgendamento = TableAgendamento;
+    }
+
+    public JComboBox getjComboBoxCliente() {
+        return jComboBoxCliente;
+    }
+
+    public void setjComboBoxCliente(JComboBox jComboBoxCliente) {
+        this.jComboBoxCliente = jComboBoxCliente;
+    }
+
+    public JComboBox getjComboBoxServico() {
+        return jComboBoxServico;
+    }
+
+    public void setjComboBoxServico(JComboBox jComboBoxServico) {
+        this.jComboBoxServico = jComboBoxServico;
     }
     
     
